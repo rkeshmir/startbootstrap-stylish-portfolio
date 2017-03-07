@@ -39,14 +39,14 @@ body {
 /* Custom Button Styles */
 
 .btn-dark {
-    border-radius: 0;
+    border-radius: 3px;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid white;
+    color: white;
 }
 
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
+.btn-dark:hover {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
@@ -256,6 +256,10 @@ footer {
   right: 5px;
 }
 
-#top h1, #top h3 {
-    text-shadow: 0px 0px 15px #fff;
+#top h1 {
+    text-shadow: 0px 0px 15px #eee;
+}
+
+#top h3 {
+    text-shadow: 0px 0px 20px #fff;
 }
