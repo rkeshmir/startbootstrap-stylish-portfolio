@@ -329,7 +329,7 @@ section.features .feature-item i {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid white;
+    border: 7px solid #dbdbdb;
 }
 
 .team-member h4 {
@@ -380,6 +380,18 @@ a, a.active, a:active, a:focus, a:hover {
     outline: 0;
 }
 
-.text-primary, a {
-    color: #fed136;
+.team-member .list-inline {
+    margin-right: -50px;
+}
+
+aside.clients img {
+    margin: 50px auto;
+}
+
+.clients a {
+    filter: grayscale(100%);
+}
+
+.clients a:hover {
+    filter: grayscale(10%);
 }
