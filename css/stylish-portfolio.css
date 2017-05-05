@@ -23,6 +23,11 @@ body {
     font-family: Yekan, "Yekan", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+blockquote {
+    border-left: none;
+    border-right: 5px solid #eee;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -233,11 +238,6 @@ hr.small {
     height: 500px;
 }
 
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
 
 .map iframe {
     pointer-events: none;
@@ -363,7 +363,7 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    background-color: #222;
+    background-color: #193a56;
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -485,7 +485,7 @@ aside.clients img {
     color: inherit;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .navbar-custom {
         padding: 20px 0;
         border-bottom: none;
@@ -514,28 +514,74 @@ aside.clients img {
         background: #337ab7;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
+
+    .navbar-nav > li {
+        float: right;
+    }
     .navbar-default.top-nav-collapse .navbar-nav > li > a {
         color: #eeeeee;
     }
 
-    .clients a img {
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        /*-ms-filter: grayscale(100%);*/
-        -o-filter: grayscale(100%);
-        transition: filter 0.8s ease-in-out;
+    .map-container {
+        /*background: #00ff00 url("../img/map.JPG") center center padding-box padding-box scroll;*/
+        background: url("../img/map.JPG");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 50%;
+        display: inherit;
+        float: left;
     }
 
-    .clients a:hover img{
-        filter: grayscale(10%);
-        -webkit-filter: grayscale(10%);
+    .map-btn {
+        display: none;
+    }
+
+    .map {
+        height: 75%;
+    }
+
+    .lg-xl-hidden {
+        display: none;
+    }
+
+}
+
+@media (max-width: 766px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: black;
+    }
+
+    .map-link {
+        display: none;
+    }
+
+    .sm-hidden {
+        display: none;
+    }
+
+    .text-vertical-center {
+        display: table-cell;
+        text-align: center;
+        vertical-align: top;
+        padding: 22% 8% 0 8%;
+    }
+
+    .text-vertical-center h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 4.5rem;
+        font-weight: 700;
     }
 }
 
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-        color: black;
+@media (min-width: 767px) and (max-width: 992px) {
+    .nav > li.m-hidden {
+        display: none;
+    }
+
+    .md-hidden {
+        display: none;
     }
 }
 
@@ -589,4 +635,37 @@ footer .list-inline img:hover {
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #eeeeee;
+}
+
+/*
+ * form input
+ */
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-left: 0;
+    border-radius: 0;
+}
+
+.input-group-addon:last-child {
+    border: 1px solid #ccc;
+    border-right-width: 0px;
+    border-right-style: initial;
+    border-right-color: initial;
+}
+
+.input-group-addon {
+    border-radius: 0;
+}
+
+#blog img {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    padding: 0 5px;
 }
