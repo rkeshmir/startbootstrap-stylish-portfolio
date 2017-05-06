@@ -560,6 +560,9 @@ aside.clients img {
         display: none;
     }
 
+    .services.bg-primary {
+        background-color: #eeeeee;
+    }
     .text-vertical-center {
         display: table-cell;
         text-align: center;
@@ -668,4 +671,32 @@ footer .list-inline img:hover {
     float: right;
     width: 50%;
     padding: 0 5px;
+}
+
+.close {
+    float: left;
+}
+
+.accordion .fa {
+
+}
+
+.accordion .panel {
+    border: none;
+    border-radius: 0;
+}
+
+.accordion .panel-heading {
+    background-color: #337ab7;
+    border-radius: 0;
+    color: white;
+}
+
+.accordion .panel-body {
+    background-color: white;
+    color: black;
+}
+
+.accordion a {
+    text-decoration: none;
 }

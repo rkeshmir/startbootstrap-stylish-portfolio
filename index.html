@@ -204,7 +204,7 @@
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center sm-hidden">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>خدمات سه‌ماهی</h2>
                     <hr class="small">
@@ -222,7 +222,8 @@
                                     </strong>
                                 </h4>
                                 <p></p>
-                                <a href="#" class="btn btn-light">نمونه کارها</a>
+                                <a href="#services" class="btn btn-light" data-toggle="modal"
+                                   data-target="#brnadsModal">نمونه کارها</a>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
@@ -238,7 +239,10 @@
                                 </h4>
                                 <p>
                                 </p>
-                                <a href="#" class="btn btn-light">نمونه کارها</a>
+                                <a href="#services" data-toggle="modal" data-target="#socialModal"
+                                   class="btn btn-light">
+                                    توضیحات بیشتر ...
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
@@ -292,6 +296,141 @@
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+            <div class="row lg-xl-hidden accordion">
+                <div class="col-sm-3 col-md-3">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <i class="fa fa-star"></i>
+                                        برندسازی
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    محتوای برندسازی
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span
+                                            class="glyphicon glyphicon-th">
+                            </span>Modules</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.jquery2dotnet.com">Orders</a> <span
+                                                    class="label label-success">$ 320</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.jquery2dotnet.com">Invoices</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.jquery2dotnet.com">Shipments</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.jquery2dotnet.com">Tex</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span
+                                            class="glyphicon glyphicon-user">
+                            </span>Account</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.jquery2dotnet.com">Notifications</a> <span
+                                                    class="label label-info">5</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-trash text-danger"></span><a
+                                                    href="http://www.jquery2dotnet.com" class="text-danger">
+                                                Delete Account</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span
+                                            class="glyphicon glyphicon-file">
+                            </span>Reports</a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-usd"></span><a
+                                                    href="http://www.jquery2dotnet.com">Sales</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-user"></span><a
+                                                    href="http://www.jquery2dotnet.com">Customers</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-tasks"></span><a
+                                                    href="http://www.jquery2dotnet.com">Products</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-shopping-cart"></span><a
+                                                    href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- /.row -->
         </div>
@@ -861,6 +1000,48 @@
 
     <!-- custom scripts -->
     <script src="js/three-fish.js"></script>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="brnadsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">برندسازی</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="socialModalLabel">
+                        محتوای شبکه‌های اجتماعی
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
