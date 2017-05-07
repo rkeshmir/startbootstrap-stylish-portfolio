@@ -14,7 +14,7 @@ $("#menu-toggle").click(function(e) {
 });
 // Scrolls to the selected menu item on the page
 $(function() {
-    $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+    $('a[href*=\\#]:not([href=\\#],[data-toggle],[data-target],[data-slide])').click(function () {
         $('#menu-items').removeClass('open');
         $('.navbar-collapse.collapse').removeClass('in');
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
